@@ -80,6 +80,7 @@ let json = await response.json()
 
 console.log('All Rides Button was clicked')
 
+document.querySelector('.container').innerHTML = ''
 renderRides(json)
 })
 
@@ -99,7 +100,7 @@ for (let i=0; i<json.length; i++){
   if(b == "Noober Purple"){
   purplerides.push(json[i])}}
 
-
+document.querySelector('.container').innerHTML = ''
 renderRides(purplerides)
 })
 
@@ -120,7 +121,7 @@ for (let i=0; i<json.length; i++){
   if(b == "Noober Pool"){
   poolrides.push(json[i])}}
 
-
+document.querySelector('.container').innerHTML = ''
 renderRides(poolrides)
 
 })
@@ -141,7 +142,7 @@ for (let i=0; i<json.length; i++){
   if(b == "Noober XL"){
   xlrides.push(json[i])}}
 
-
+document.querySelector('.container').innerHTML = ''
 renderRides(xlrides)
 
 })
@@ -162,7 +163,7 @@ for (let i=0; i<json.length; i++){
   if(b == "Noober X"){
   xrides.push(json[i])}}
 
-
+document.querySelector('.container').innerHTML = ''
 renderRides(xrides)
 
 })
